@@ -25,10 +25,10 @@ const mail = () => {
       from: "aaa@com",
       to: "bbb@com",
       subject: "test",
-      message: "test-test"
+      body: "test-test"
     },
     (err, info) => {
-      console.log('error', err);
+      if(err) console.log('error', err);
       console.log('info', info);
     }
   );
